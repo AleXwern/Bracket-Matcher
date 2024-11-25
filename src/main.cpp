@@ -6,7 +6,7 @@
 /*   By: AleXwern <AleXwern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 17:05:43 by AleXwern          #+#    #+#             */
-/*   Updated: 2024/11/25 17:36:12 by AleXwern         ###   ########.fr       */
+/*   Updated: 2024/11/25 17:53:13 by AleXwern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ std::string	bracketMatcher(const char *src)
 		}
 		src++;
 	}
-	if (bracketCount > 0)
+	if (bracketCount > 0 && brackets.size() == 1)
 		return "1 " + std::to_string(bracketCount);
 	else
 		return "0";

@@ -6,13 +6,13 @@
 #    By: AleXwern <AleXwern@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/25 17:02:22 by AleXwern          #+#    #+#              #
-#    Updated: 2024/11/25 17:41:59 by AleXwern         ###   ########.fr        #
+#    Updated: 2024/11/25 21:19:04 by AleXwern         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= brackets.exe
 FLAG	= -m64 -Wall -Wextra -Werror
-SRCFILE	= main.cpp
+SRCFILE	= reversepolish.cpp
 OBJ		= $(addprefix ./obj/,$(SRCFILE:.cpp=.o))
 INCLS	= -I ./includes
 GREEN	= \033[0;32m
